@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Set up web server for deployment of web_static
 apt-get -y update
-apt-get install nginx
+apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 ufw enable
 mkdir -p /data/web_static/releases/test/

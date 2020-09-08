@@ -67,3 +67,7 @@ class FileStorage:
             if str_aux in self.all().keys():
                 self.all().pop(str_aux)
         self.save()
+
+    def close(self):
+        """ Deserializing the JSON file to objects """
+        self.reload()
